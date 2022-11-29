@@ -62,7 +62,7 @@
             font-display: swap;
         }
     </style>
-</head>
+<link rel="stylesheet" href="/static/css/prism.min.css"><script src="/static/js/code-blocks.js"></script></head>
 
 <body class="page-kurs-eleventy-instalacja">
     <div data-scroll-container="">
@@ -126,6 +126,7 @@
         </div>
     </div>
 </header>
+<div class="site-overlay"></div>
 <div id="swup" class="transition-fade">
     <main>
         
@@ -165,36 +166,27 @@
 <p>Musisz znać HTML, CSS, podstawy JavaScript i Gita. Jak widzisz to nie są duże wymagania, a nawet jeżeli jeszcze nie znasz Gita to z tym tutorialem nie będzie problemu, a przy okazji poznasz jego absolutne podstawy. Dobra, to do dzieła!</p>
 <p>Zaczniemy od przygotowania środowiska (Node.js) i instalacji GIT. Przejdź na stronę https://nodejs.org/en/ i zainstaluj ostatnią stabilna wersję, w momencie pisania tego samouczka mamy wersję 18.12.1.</p>
 <p>Instalacja jest bardzo prosta, po pobraniu i uruchomieniu kreatora instalacji wszystko może zostac domyślnie, poprostu klikaj "Dalej" aż przejdziesz cały proces instalacji. Następnie otwórz wiersz poleceń i sprawdź czy instalacja przebiegła prawidłowo, jeżeli jest wszystko ok, to po wpisaniu poniższego polecenia powinna wyświetlic Ci się aktualna wersj Node.js</p>
-<pre><code class="language-javascript">node -v
-</code></pre>
+<pre class="language-javascript line-numbers" data-language="javascript"><code class="language-javascript line-numbers" data-language="javascript"><span class="token line-number" aria-hidden="true"></span>node <span class="token operator">-</span>v</code></pre>
 <p>Lecimy dalej, teraz zainstaluj GIT'a. Skorzystaj z NPM (Menadżer pakietów node), wpisz komendę:</p>
-<pre><code class="language-javascript">npm install git
-</code></pre>
+<pre class="language-javascript line-numbers" data-language="javascript"><code class="language-javascript line-numbers" data-language="javascript"><span class="token line-number" aria-hidden="true"></span>npm install git</code></pre>
 <p>Następnie sprawdź czy się poprawnie zainstalował sprawdzając wersję analogicznie jak poprzednio z instalacją Node.js, czyli:</p>
-<pre><code class="language-javascript">git -v
-</code></pre>
+<pre class="language-javascript line-numbers" data-language="javascript"><code class="language-javascript line-numbers" data-language="javascript"><span class="token line-number" aria-hidden="true"></span>git <span class="token operator">-</span>v</code></pre>
 <p>Jeżeli wszystko jest w porządku wyświetli sie aktualna wersja jak poniżej:</p>
-<pre><code class="language-javascript">git version 2.38.0.windows.1
-</code></pre>
+<pre class="language-javascript line-numbers" data-language="javascript"><code class="language-javascript line-numbers" data-language="javascript"><span class="token line-number" aria-hidden="true"></span>git version <span class="token number">2.38</span><span class="token number">.0</span><span class="token punctuation">.</span>windows<span class="token punctuation">.</span><span class="token number">1</span></code></pre>
 <p>Jak już mamy przygotowane srodowisko przechodzimy do sedna, czyli instalacji generatora stron statycznych Eleventy. Zacznij od utworzenia folderu z nazwą projektu w którym będą wszystkie pliki. Możesz to zrobić poprostu w edytorze wizualnym albo w konsoli wpisując</p>
-<pre><code class="language-javascript">mkdir nazwaprojektu
-</code></pre>
+<pre class="language-javascript line-numbers" data-language="javascript"><code class="language-javascript line-numbers" data-language="javascript"><span class="token line-number" aria-hidden="true"></span>mkdir nazwaprojektu</code></pre>
 <p>Nastepnie przechodzimy do folderu</p>
-<pre><code class="language-javascript">cd nazwaprojektu
-</code></pre>
+<pre class="language-javascript line-numbers" data-language="javascript"><code class="language-javascript line-numbers" data-language="javascript"><span class="token line-number" aria-hidden="true"></span>cd nazwaprojektu</code></pre>
 <p>I otwieramy edytor kodu, korzystając z komendy</p>
-<pre><code class="language-javascript">code .
-</code></pre>
+<pre class="language-javascript line-numbers" data-language="javascript"><code class="language-javascript line-numbers" data-language="javascript"><span class="token line-number" aria-hidden="true"></span>code <span class="token punctuation">.</span></code></pre>
 <p>To polecenie otworzy domyślny edytor kodu, u mnie jest to Visual Studio Code.</p>
 <p>Możesz zamknąć wiersz poleceń, od teraz wygodniej będzie korzystać z terminala w budowanego w VST.
 Inicjujemy node'a poleceniem</p>
-<pre><code class="language-javascript">npm init -y
-
-</code></pre>
+<pre class="language-javascript line-numbers" data-language="javascript"><code class="language-javascript line-numbers" data-language="javascript"><span class="token line-number" aria-hidden="true"></span>npm init <span class="token operator">-</span>y
+<span class="token line-number" aria-hidden="true"></span></code></pre>
 <p>W katalogu głównym utworzył się plik konfiguracyjny o nazwie package-lock.json z zależnościami, na ten moment ten plik nie będzie nam potrzebny więc go pomijamy.</p>
 <p>Teraz instalujemy eleventy poprzez npm</p>
-<pre><code class="language-javascript">npm install @11ty/eleventy --save-dev
-</code></pre>
+<pre class="language-javascript line-numbers" data-language="javascript"><code class="language-javascript line-numbers" data-language="javascript"><span class="token line-number" aria-hidden="true"></span>npm install @11ty<span class="token operator">/</span>eleventy <span class="token operator">--</span>save<span class="token operator">-</span>dev</code></pre>
 <p>Jak już pewnie zauważeś że utworzył się kolejny plik o nazwie package.json</p>
 <p>Plik zawiera kofigurację projektu</p>
 

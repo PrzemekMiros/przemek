@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    transition: .15s ease-in-out;
     opacity: .5
 }
 
@@ -15,7 +16,7 @@
 }
 
 .client-logo-wrap img {
-    max-width: 115px;
+    max-width: 135px;
     height: auto;
     filter: grayscale(100%);
     transition: .8s cubic-bezier(0.215, 0.610, 0.355, 1)

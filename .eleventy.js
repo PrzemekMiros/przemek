@@ -5,28 +5,6 @@ const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 const codeStyleHooks = require("eleventy-plugin-code-style-hooks");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addWatchTarget("src/assets/sass/");
-  eleventyConfig.addPassthroughCopy("src/assets/img");
-  eleventyConfig.addPassthroughCopy('./src/assets/js');
-  eleventyConfig.addPassthroughCopy('./src/assets/fonts');
-  eleventyConfig.addPassthroughCopy('./src/admin');
-
-  eleventyConfig.addPlugin(codeStyleHooks, {
-    colorPreviews: true,
-    defaultLanguage: 'js',
-    highlightSyntax: true,
-    languageLabels: true,
-    lineNumbers: true,
-    markdownTrimTrailingNewline: true,
-    prism: function(prism) {
-      prism.languages.example = {
-        tokenname: /\w+/i
-      }
-    },
-    removeRedundancy: true,
-    scripts: '/static/js/code-blocks.js',
-    styles: '/static/css/prism.min.css'
-  });
 
   // Image plugin
   eleventyConfig.addNunjucksAsyncShortcode("Image", async (src, alt) => {
@@ -77,6 +55,32 @@ module.exports = function (eleventyConfig) {
 
     return `<div class="image-wrapper"><picture> ${source} ${img} </picture></div>`;
   });
+
+
+  eleventyConfig.addWatchTarget("./src/assets/sass/");
+  eleventyConfig.addPassthroughCopy("./src/assets/css/");
+  eleventyConfig.addPassthroughCopy("./src/assets/img");
+  eleventyConfig.addPassthroughCopy('./src/assets/js');
+  eleventyConfig.addPassthroughCopy('./src/assets/fonts');
+  eleventyConfig.addPassthroughCopy('./src/admin');
+
+  eleventyConfig.addPlugin(codeStyleHooks, {
+    colorPreviews: true,
+    defaultLanguage: 'js',
+    highlightSyntax: true,
+    languageLabels: true,
+    lineNumbers: true,
+    markdownTrimTrailingNewline: true,
+    prism: function(prism) {
+      prism.languages.example = {
+        tokenname: /\w+/i
+      }
+    },
+    removeRedundancy: true,
+    scripts: '/static/js/code-blocks.js',
+    styles: '/static/css/prism.min.css'
+  });
+
 
 
   // Collections
@@ -140,5 +144,6 @@ module.exports = function (eleventyConfig) {
       output: "public",
       includes: "includes",
     },
+    markdownTemplateEngine: "njk",
   };
 };

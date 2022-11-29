@@ -1,80 +1,47 @@
+:root {
+  --transPower1: cubic-bezier(.25,.24,.22,1.55);
+  --transPower2: cubic-bezier(.83,0,.17,1);
+}
+
 .transition-fade {
-  transition: 500ms cubic-bezier(0.25, 0.24, 0.22, 1.55);
+  transition: 1000ms 400ms var(--transPower1);
   transform: translateY(0);
 }
 
 html.is-animating .transition-fade {
-  transform: translateY(-60px);
+  transition: 1300ms var(--transPower1);
+  transform: translateY(90px);
   opacity: 0;
 }
 
 html.is-leaving .transition-fade {
-  transform: translateY(-60px);
+  transform: translateY(-90px);
   opacity: 0;
+}
+
+.site-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-dark-1);
+  pointer-events: none;
+  transition: 1000ms var(--transPower2);
+  transform: translateY(100%);
+  transform-origin: top;
+  z-index: 999;
+}
+
+html.is-animating .site-overlay {
+  transform: translateY(-100%);
+}
+
+html.is-leaving .site-overlay {
+  transform: translateY(0);
 }
 
 .swup-progress-bar {
   height: 2px;
   background-color: var(--color-light-2);
 }
-
-/*--
-
-  .transition-fade {
-  transition: 500ms cubic-bezier(.25,.24,.22,1.55);
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
-}
-
-html.is-animating .transition-fade {
-  opacity: 0;
-  transform: translate3d(0px, 0px, 0px) scale3d(0.710458, 0.710458, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
-}
-
-html.is-leaving .transition-fade {
-
-}
-
-
-  .swup-progress-bar {
-    height: 2px;
-    background-color: var(--color-dark-1);
-  }
-   --*/
-/*--
-
-html.is-changing .transition-fade {
-  opacity: 0.5;
-  transform: translateY(-10%);
-}
-
-
-html.is-leaving .transition-fade {
-  transform: translateX(100%);
-
-}
-
-
-.site-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--color-dark-1);
-  pointer-events: none;
-  transition: 500ms cubic-bezier(.83,0,.17,1);
-  transition-delay: 100ms;
-  transform: translateY(-100%);
-  transform-origin: bottom;
-  z-index: 999;
-}
-
-html.is-animating .site-overlay {
-  transform: translateY(0);
-}
-
-html.is-leaving .site-overlay {
-  transform: translateY(0)
-}
-
---*/
