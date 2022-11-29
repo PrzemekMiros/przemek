@@ -1,0 +1,20 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+  }
+  
+.fade-in-down {
+    opacity: 0;
+    transform: translateY(200px);
+    transition: .8s cubic-bezier(.215,.61,.355,1)
+}
+
+.fade-in-down.is-inview {
+    opacity: 1;
+    transform: translateY(0);
+    animation-delay: 1s
+}

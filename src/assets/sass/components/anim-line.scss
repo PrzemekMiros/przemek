@@ -1,0 +1,13 @@
+.anim-line {
+    display: inline-block;
+    background-color: var(--color-light-2);
+    height: 2px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: center left;
+    transition: transform .6s cubic-bezier(.215,.61,.355,1);
+}
+
+.anim-line.is-inview {
+    transform: scaleX(1);
+  }

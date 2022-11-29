@@ -1,0 +1,58 @@
+<section data-scroll-section>
+        <ul class="hover-list py-medium">
+            <li>
+                <div class="hover-item">
+                    <h2 class="heading">Heading 1</h2>
+                    <div class="hover-reveal image01">
+                        <img class="hidden-img" src="/assets/img/1.jpg">
+                    </div>
+                </div>
+            </li>
+             <li>
+                <div class="hover-item">
+                    <h2 class="heading">Heading 2</h2>
+                    <div class="hover-reveal image01">
+                        <img class="hidden-img" src="/assets/img/2.jpg">
+                    </div>
+                </div>
+            </li>
+             <li>
+                <div class="hover-item">
+                    <h2 class="heading">Heading 3</h2>
+                    <div class="hover-reveal image01">
+                        <img class="hidden-img" src="/assets/img/3.jpg">
+                    </div>
+                </div>
+            </li>
+             <li>
+                <div class="hover-item">
+                    <h2 class="heading">Heading 4</h2>
+                    <div class="hover-reveal image01">
+                        <img class="hidden-img" src="/assets/img/4.jpg">
+                    </div>
+                </div>
+            </li>
+        </ul>
+</section>
+
+<script>
+const link = document.querySelectorAll('.hover-item');
+const linkHoverReveal = document.querySelectorAll('.hover-reveal');
+const linkImages = document.querySelectorAll('.hidden-img');
+
+
+for(let i = 0; i < link.length; i++) {
+  link[i].addEventListener('mousemove', (e) => {
+    linkHoverReveal[i].style.opacity = 1;
+    linkHoverReveal[i].style.transform = `translate(-100%, -50% ) rotate(0deg)`;
+    linkImages[i].style.transform = 'scale(1, 1)';
+    linkHoverReveal[i].style.left = e.clientX + "px";
+  })
+  
+  link[i].addEventListener('mouseleave', (e) => {
+    linkHoverReveal[i].style.opacity = 0;
+    linkHoverReveal[i].style.transform = `translate(-50%, -50%) rotate(-5deg)`;
+    linkImages[i].style.transform = 'scale(0.8, 0.8)';
+  })
+}
+</script>

@@ -1,0 +1,4 @@
+{
+    "layout": "layouts/realisation.njk",
+    "permalink": "/realizacje/{{ title | slugify }}/"
+}

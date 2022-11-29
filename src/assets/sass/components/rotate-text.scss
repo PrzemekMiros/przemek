@@ -1,0 +1,53 @@
+.go-down-btn {
+  position: absolute;
+  z-index: 1;
+  display: inline-block;
+  transform: translateX(5em) translateY(-15em);
+}
+
+.go-down-btn img {
+  position: absolute;
+  top: calc(50% - 55px);
+  left: calc(50% - 60px);
+  width: 120px;
+}
+
+.go-down-btn svg {
+  position: relative;
+  z-index: -1;
+  display: block;
+  fill: var(--color-text);
+}
+
+.go-down-btn text {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  transform-origin: center;
+  opacity: .1
+}
+
+@-webkit-keyframes rotate-btn {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-btn {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.go-down-btn text {
+  -webkit-animation: rotate-btn 10s linear infinite;
+  animation: rotate-btn 10s linear infinite;
+}
+
+@media(min-width:767px) {
+  .go-down-btn {
+    position: relative;
+    transform: translateX(-11em) translateY(-3em);
+  }
+}

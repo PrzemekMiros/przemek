@@ -1,0 +1,56 @@
+
+.hover-list {
+    padding-left: 0
+  }
+  
+  .hover-list li {
+      border-bottom: .02rem solid var(--color-dark-1);
+      position: relative;
+    list-style: none;
+      z-index: 10;
+  }
+  
+  .hover-list li .hover-item {
+      display: flex;
+      padding: 2.4rem 0;
+      z-index: 10;
+      justify-content:space-between;
+  }
+  
+  .hover-list li .hover-item .heading {
+      display: block;
+      z-index: 10;
+      mix-blend-mode: difference;
+      display: inline-block;
+      position: relative;
+      color: var(--color-heading);
+  }
+  .hover-list li .hover-item > img {
+      mix-blend-mode: difference;
+      z-index: 10;
+  }
+  
+  
+  .hover-reveal {
+      position: absolute;
+      width: 700px;
+      height: 500px;
+      top: 50%;
+      left: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      overflow: hidden;
+      opacity: 0;
+      transform: scale(0.8);
+      transition: all .5s ease-out;
+  }
+  
+  .hover-reveal img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: relative;
+      transition: transform .4s ease-out;
+  }
+  
+  
