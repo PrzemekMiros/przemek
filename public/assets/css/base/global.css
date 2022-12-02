@@ -79,7 +79,7 @@ li {
 
 @media (min-width: 1024px) {
   body {
-    border: 13px solid var(--color-heading);
+    border: 10px solid var(--color-heading);
     overflow: hidden;
   }
   .brief {

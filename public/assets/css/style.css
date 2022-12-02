@@ -79,7 +79,7 @@ li {
 
 @media (min-width: 1024px) {
   body {
-    border: 13px solid var(--color-heading);
+    border: 10px solid var(--color-heading);
     overflow: hidden;
   }
   .brief {
@@ -5522,7 +5522,7 @@ small {
 
 .client-logo-wrap img {
   max-width: 135px;
-  height: auto;
+  height: 55px;
   filter: grayscale(100%);
   transition: 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
 }

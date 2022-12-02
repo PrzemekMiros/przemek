@@ -3,6 +3,7 @@ const sharp = require("sharp");
 const { DateTime } = require("luxon");
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 const codeStyleHooks = require("eleventy-plugin-code-style-hooks");
+const eleventyPluginFilesMinifier = require("@sherby/eleventy-plugin-files-minifier");
 
 module.exports = function (eleventyConfig) {
 
@@ -56,7 +57,6 @@ module.exports = function (eleventyConfig) {
     return `<div class="image-wrapper"><picture> ${source} ${img} </picture></div>`;
   });
 
-
   eleventyConfig.addWatchTarget("./src/assets/sass/");
   eleventyConfig.addPassthroughCopy("./src/assets/css/");
   eleventyConfig.addPassthroughCopy("./src/assets/img");
@@ -64,6 +64,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/assets/fonts');
   eleventyConfig.addPassthroughCopy('./src/admin');
 
+  // Code blocks
   eleventyConfig.addPlugin(codeStyleHooks, {
     colorPreviews: true,
     defaultLanguage: 'js',
@@ -81,17 +82,17 @@ module.exports = function (eleventyConfig) {
     styles: '/static/css/prism.min.css'
   });
 
-
+  // Minify plugin
+  eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
 
   // Collections
   eleventyConfig.addCollection('posts', function(collectionApi) {
     return collectionApi.getFilteredByGlob('src/blog/**/*.md').reverse();
-  })
+  });
 
   eleventyConfig.addCollection('realizacje', function(collectionApi) {
     return collectionApi.getFilteredByGlob('src/realizacje/**/*.md').reverse();
-  })
-
+  });
 
   // Date
   eleventyConfig.addFilter("readablePostDate", (dateObj) => {
@@ -110,10 +111,8 @@ module.exports = function (eleventyConfig) {
   
   eleventyConfig.addFilter('dateDisplay', require('./src/filters/date-display.js'));
 
-
-  // Next and prev
+  // Prev post
   eleventyConfig.addShortcode('previous', (collections, [tag], {inputPath}) => {
-    // Assumes the first tag to be the filter for the post to be "paginated".
     const collec = collections[tag];
   
     for (let i = 0; i <= collec.length; i++) {
@@ -123,8 +122,8 @@ module.exports = function (eleventyConfig) {
     }
   });
   
+  // Next post
   eleventyConfig.addShortcode('next', (collections, [tag], {inputPath}) => {
-    // Assumes the first tag to be the filter for the post to be "paginated".
     const collec = collections[tag];
   
     for (let i = 1; i <= collec.length-1; i++) {
@@ -134,9 +133,8 @@ module.exports = function (eleventyConfig) {
     }
   });
 
-
+  // Lazy image
   eleventyConfig.addPlugin(lazyImagesPlugin);
-
 
   return {
     dir: {
