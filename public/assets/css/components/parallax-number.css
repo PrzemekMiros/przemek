@@ -14,7 +14,7 @@
   left: calc(50% - 2px);
   width: 2px;
   height: 0;
-  background: var(--color-light-2);
+  background: var(--color-border);
 }
 
 .parallax-number-wrap::after {

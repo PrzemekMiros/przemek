@@ -46,7 +46,7 @@ li {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.6;
+  opacity: 0.9;
   pointer-events: none;
   z-index: 1;
 }
@@ -227,10 +227,15 @@ pre[class*=language-] {
   font-style: italic;
 }
 
+.bg-gradient-wrap {
+  opacity: 0;
+  animation: fadeIn 1s 3s forwards;
+}
+
 .bg-gradient {
   height: 700px;
   width: 700px;
-  background-image: linear-gradient(90deg, #eb3434, #eb5e34, #eb8334, #eba434, #ebcc34, #ebeb34, #c3eb34, #89eb34, #58eb34, #34eb52, #34ebcc, #34d5eb, #34a8eb, #346beb, #3734eb, #7734eb, #a834eb, #eb34c3, #eb3489, #eb3461);
+  background-image: linear-gradient(90deg, #a834eb, #7a34eb, #4f34eb, #3446eb, #346beb, #3734eb, #7734eb, #a834eb);
   filter: blur(400px);
   border-radius: 100%;
   background-size: 1000% 100%;
@@ -240,6 +245,14 @@ pre[class*=language-] {
   z-index: 0;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes gradient {
   0% {
     background-position: 0% 50%;

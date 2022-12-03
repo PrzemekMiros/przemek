@@ -46,7 +46,7 @@ li {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.6;
+  opacity: 0.9;
   pointer-events: none;
   z-index: 1;
 }
@@ -227,10 +227,15 @@ pre[class*=language-] {
   font-style: italic;
 }
 
+.bg-gradient-wrap {
+  opacity: 0;
+  animation: fadeIn 1s 3s forwards;
+}
+
 .bg-gradient {
   height: 700px;
   width: 700px;
-  background-image: linear-gradient(90deg, #eb3434, #eb5e34, #eb8334, #eba434, #ebcc34, #ebeb34, #c3eb34, #89eb34, #58eb34, #34eb52, #34ebcc, #34d5eb, #34a8eb, #346beb, #3734eb, #7734eb, #a834eb, #eb34c3, #eb3489, #eb3461);
+  background-image: linear-gradient(90deg, #a834eb, #7a34eb, #4f34eb, #3446eb, #346beb, #3734eb, #7734eb, #a834eb);
   filter: blur(400px);
   border-radius: 100%;
   background-size: 1000% 100%;
@@ -240,6 +245,14 @@ pre[class*=language-] {
   z-index: 0;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -4725,7 +4738,7 @@ html.is-leaving .site-overlay {
   --color-heading: #0c3340;
   --color-text: #4f646b;
   --shadow-img: 0px 10px 50px rgba(17, 17, 17, 0.06), 0px -10px 50px rgba(17, 17, 17, 0.06);
-  --color-border: #eee;
+  --color-border: rgba(153, 153, 153, 0.1333333333);
 }
 
 [data-theme=dark] {
@@ -4739,7 +4752,7 @@ html.is-leaving .site-overlay {
   --color-heading: #fff;
   --color-text: #aaa;
   --shadow-img: 0px 10px 30px rgba(17, 17, 17, 0.1), 0px -10px 30px rgba(17, 17, 17, 0.1);
-  --color-border: #2e2e2e;
+  --color-border: rgba(153, 153, 153, 0.1333333333);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -4754,7 +4767,7 @@ html.is-leaving .site-overlay {
     --color-heading: #fff;
     --color-text: #aaa;
     --shadow-img: 0px 10px 30px rgba(17, 17, 17, 0.1), 0px -10px 30px rgba(17, 17, 17, 0.1);
-    --color-border: #2e2e2e;
+    --color-border: rgba(153, 153, 153, 0.1333333333);
   }
 }
 .color-accent-1 {
@@ -5449,7 +5462,7 @@ small {
 }
 .anim-line {
   display: inline-block;
-  background-color: var(--color-light-2);
+  background-color: var(--color-border);
   height: 2px;
   width: 100%;
   transform: scaleX(0);
@@ -5477,7 +5490,7 @@ small {
   left: calc(50% - 2px);
   width: 2px;
   height: 0;
-  background: var(--color-light-2);
+  background: var(--color-border);
 }
 
 .parallax-number-wrap::after {
