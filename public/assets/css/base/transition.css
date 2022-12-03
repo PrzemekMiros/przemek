@@ -1,23 +1,30 @@
 :root {
-  --transPower1: cubic-bezier(.25,.24,.22,1.55);
+  --transPower1: cubic-bezier(0,.5,.21,.97);
   --transPower2: cubic-bezier(.83,0,.17,1);
 }
 
 .transition-fade {
-  transition: 1000ms 400ms var(--transPower1);
+  transition: 500ms var(--transPower1);
   transform: translateY(0);
 }
 
 html.is-animating .transition-fade {
-  transition: 1300ms var(--transPower1);
+  transition: 500ms var(--transPower1);
   transform: translateY(90px);
   opacity: 0;
 }
 
 html.is-leaving .transition-fade {
-  transform: translateY(-90px);
+  transform: translateY(-10vh);
   opacity: 0;
 }
+
+.swup-progress-bar {
+  height: 2px;
+  background-color: var(--color-light-2);
+}
+
+/*--
 
 .site-overlay {
   position: fixed;
@@ -32,16 +39,11 @@ html.is-leaving .transition-fade {
   transform-origin: top;
   z-index: 999;
 }
-
 html.is-animating .site-overlay {
   transform: translateY(-100%);
 }
-
 html.is-leaving .site-overlay {
-  transform: translateY(0);
+  transform: translateY(0)
 }
 
-.swup-progress-bar {
-  height: 2px;
-  background-color: var(--color-light-2);
-}
+--*/
