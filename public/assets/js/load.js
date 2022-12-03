@@ -122,6 +122,7 @@ const el = document.querySelector(".grain"),
     }(e), s(t, a)
   }
  portfolioSlider();
+ 
 
 
 function loadingScripts() {
