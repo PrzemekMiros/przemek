@@ -297,7 +297,7 @@ h2, .h2 {
   }
 
   blockquote {
-    border-left: 2px solid var(--color-heading);
+    border-left: 3px solid var(--color-accent-1);
     margin-left: 0;
     padding-left: 30px;
     font-size: 24px;
@@ -319,6 +319,7 @@ h2, .h2 {
     top: -0.5em;
     left: 0;
     width: max-content;
+    background: transparent;
     opacity: .05;
     z-index: -1
   }

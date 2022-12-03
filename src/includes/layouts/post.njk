@@ -28,14 +28,14 @@
             <div class="col-xl-10 pb-small">
                 <img src="{{ thumbnail | url }}" alt="{{ title }}" class="img-fluid"></div>
             </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center pb-medium">
             <div class="col-md-8 col-xl-6">
                 {{ content | safe }}
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-xl-6">
-                <div class="post-navigation pt-xsmall pb-xsmall">
+            <div class="col-xl-9">
+                <div class="post-navigation pt-xsmall pb-small px-5 bg-light-2">
                     {%- if collections.posts %}
                         {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
                         {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
@@ -48,7 +48,7 @@
                                                 Poprzedni:
                                             </small>
                                         </p>
-                                        <a href="{{ previousPost.url | url }}" title="{{ previousPost.data.title }}" class="h5">{{ previousPost.data.title }}</a>
+                                        <a href="{{ previousPost.url | url }}" title="{{ previousPost.data.title }}" class="h4">{{ previousPost.data.title }}</a>
                                     </li>
                                 {% endif %}
                                 {%- if nextPost %}
@@ -58,7 +58,7 @@
                                                 Kolejny:
                                             </small>
                                         </p>
-                                        <a href="{{ nextPost.url | url }}" title="{{ previousPost.data.title }}" class="h5">{{ nextPost.data.title }}</a>
+                                        <a href="{{ nextPost.url | url }}" title="{{ previousPost.data.title }}" class="h4">{{ nextPost.data.title }}</a>
                                     </li>
                                 {% endif %}
                             </ul>
