@@ -262,6 +262,10 @@ pre[class*=language-] {
     background-position: 100% 100%;
   }
 }
+.page-home .site-footer .container {
+  padding-bottom: 45px;
+}
+
 html.has-scroll-smooth {
   background: var(--color-heading);
   overflow: hidden;
