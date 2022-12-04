@@ -233,6 +233,57 @@ li {
    font-style: italic;
  }
 
+
+
+
+ .bg-gradient-wrap {
+  opacity: 0;
+  animation: fadeIn 1s 3s forwards;
+ }
+
+ .bg-gradient {
+  border-radius: 100%;
+  position: absolute;
+  height: 760px;
+  width: 700px;
+  background:url('/assets/img/Eclipse.svg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 100%;
+  transform: translateX(-50%) translateY(-50%);
+  opacity: .3;
+  z-index: 0
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  100% {
+    background-position: 100% 100%
+  }
+}
+
+
+
+
+.page-home .site-footer .container {
+  padding-bottom: 45px;
+}
+
+
+/*--
+
  .bg-gradient-wrap {
   opacity: 0;
   animation: fadeIn 1s 3s forwards;
@@ -258,7 +309,6 @@ li {
   background-size: 1000% 100%;
   animation: gradient 10s infinite ease-out;
   position: absolute;
-  transform: translateX(-50%) translateY(-50%);
   opacity: .6;
   z-index: 0
 }
@@ -281,6 +331,5 @@ li {
   }
 }
 
-.page-home .site-footer .container {
-  padding-bottom: 45px;
-}
+--*/
+

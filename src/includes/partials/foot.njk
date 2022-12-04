@@ -13,7 +13,7 @@
     el: document.querySelector("[data-scroll-container]"),
     smooth: !0,
     reloadOnContextChange: !0,
-    multiplier: 1.1,
+    multiplier: 0.8,
     lerp: .2,
     touchMultiplier: 2,
     tablet: {
@@ -78,7 +78,6 @@ document.addEventListener("swup:animationInDone", () => {
   const lazyload = new Lazyload();
 </script>
 
-<!--
 <script>
 if (window.matchMedia("(min-width: 991px)").matches) {
 const cursor = document.querySelector('.bg-gradient');
@@ -113,7 +112,6 @@ document.addEventListener('mousemove', (event) => {
 });
 }
 </script>
--->   
 
 </body>
 </html>
