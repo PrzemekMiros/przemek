@@ -1,0 +1,318 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  max-width: 100vw;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100vw;
+  font-family: var(--font-secondary), sans-serif;
+  background: var(--color-light-1);
+  color: var(--color-text);
+  overflow-x: hidden !important;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.grain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.formBrief {
+  width: 1px;
+  min-width: 100%;
+  min-height: calc(100vh - 25px);
+  height: 100%;
+  border: none;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-delay: 1s;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+.formContact {
+  width: 1px;
+  min-width: 100%;
+  min-height: calc(100vh - 25px);
+  height: 100%;
+  border: none;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-delay: 1s;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+@media (min-width: 1024px) {
+  body {
+    border: 10px solid var(--color-heading);
+    overflow: hidden;
+  }
+  .brief {
+    min-height: calc(100vh - 25px);
+  }
+}
+/**
+ * atom-dark theme for `prism.js`
+ * Based on Atom's `atom-dark` theme: https://github.com/atom/atom-dark-syntax
+ * @author Joe Gibson (@gibsjose)
+ */
+code[class*=language-],
+pre[class*=language-] {
+  color: #c5c8c6;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  font-family: Inconsolata, Monaco, Consolas, "Courier New", Courier, monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*=language-] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+  border-radius: 0.3em;
+}
+
+:not(pre) > code[class*=language-],
+pre[class*=language-] {
+  background: #1d1f21;
+}
+
+/* Inline code */
+:not(pre) > code[class*=language-] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #7C7C7C;
+}
+
+.token.punctuation {
+  color: #c5c8c6;
+}
+
+.namespace {
+  opacity: 0.7;
+}
+
+.token.property,
+.token.keyword,
+.token.tag {
+  color: #96CBFE;
+}
+
+.token.class-name {
+  color: #FFFFB6;
+  text-decoration: underline;
+}
+
+.token.boolean,
+.token.constant {
+  color: #99CC99;
+}
+
+.token.symbol,
+.token.deleted {
+  color: #f92672;
+}
+
+.token.number {
+  color: #FF73FD;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #A8FF60;
+}
+
+.token.variable {
+  color: #C6C5FE;
+}
+
+.token.operator {
+  color: #EDEDED;
+}
+
+.token.entity {
+  color: #FFFFB6;
+  cursor: help;
+}
+
+.token.url {
+  color: #96CBFE;
+}
+
+.language-css .token.string,
+.style .token.string {
+  color: #87C38A;
+}
+
+.token.atrule,
+.token.attr-value {
+  color: #F9EE98;
+}
+
+.token.function {
+  color: #DAD085;
+}
+
+.token.regex {
+  color: #E9C062;
+}
+
+.token.important {
+  color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.bg-gradient-wrap {
+  opacity: 0;
+  animation: fadeIn 2s 5s forwards;
+}
+
+.bg-gradient {
+  border-radius: 100%;
+  position: absolute;
+  height: 760px;
+  width: 700px;
+  background: url("/assets/img/Eclipse.svg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 100%;
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 0.5;
+  z-index: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+.page-home .site-footer .container {
+  padding-bottom: 45px;
+}
+
+/*--
+
+ .bg-gradient-wrap {
+  opacity: 0;
+  animation: fadeIn 1s 3s forwards;
+ }
+
+ .bg-gradient {
+  height: 700px;
+  width: 700px;
+  background-image: linear-gradient(
+    90deg,
+    #a834eb,
+    #7a34eb,
+    #4f34eb,
+    #3446eb,
+    #346beb,
+    #3734eb,
+    #7734eb,
+    #a834eb,
+
+  );
+  filter: blur(400px);
+  border-radius: 100%;
+  background-size: 1000% 100%;
+  animation: gradient 10s infinite ease-out;
+  position: absolute;
+  opacity: .6;
+  z-index: 0
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  100% {
+    background-position: 100% 100%
+  }
+}
+
+--*/

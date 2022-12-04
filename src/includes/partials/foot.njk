@@ -13,7 +13,7 @@
     el: document.querySelector("[data-scroll-container]"),
     smooth: !0,
     reloadOnContextChange: !0,
-    multiplier: 0.8,
+    multiplier: 1.1,
     lerp: .2,
     touchMultiplier: 2,
     tablet: {
@@ -88,7 +88,7 @@ let mouseY = 0;
 let cursorX = 0;
 let cursorY = 0;
 
-let speed = 0.05;
+let speed = 0.15;
 
 function animate() {
     let distX = mouseX - cursorX;
