@@ -1,7 +1,7 @@
 ---
 title: Kurs Eleventy - Instalacja
 description: Kurs z generatora stron statycznych Eleventy
-date: 2022-11-21T19:43:40.029Z
+date: 2022-11-25T19:43:40.029Z
 author: Przemek Miros
 thumbnail: /assets/img/eleventy-kurs.jpg
 tags:
