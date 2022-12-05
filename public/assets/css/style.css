@@ -236,7 +236,7 @@ pre[class*=language-] {
 .bg-gradient {
   height: 700px;
   width: 700px;
-  background-image: linear-gradient(90deg, #a834eb, #7a34eb, #4f34eb, #3446eb, #346beb, #3734eb, #7734eb, #a834eb);
+  background-image: linear-gradient(90deg, #00ff62, #0bcff1, #0e24e2, #8934eb, #311de6, #0b91eb, #00f1c9, #00ff62);
   filter: blur(100px);
   -webkit-filter: blur(100px);
   border-radius: 100%;
@@ -388,14 +388,20 @@ html.has-scroll-dragging {
 }
 
 html.is-animating .transition-fade {
-  transition: 500ms var(--transPower1);
-  transform: translateY(90px);
   opacity: 0;
 }
 
-html.is-leaving .transition-fade {
-  transform: translateY(-10vh);
-  opacity: 0;
+html.is-rendering .transition-fade {
+  transition-delay: 350ms;
+}
+
+.bg-gradient {
+  transition-property: transform;
+  transition-duration: 500ms;
+}
+
+html.is-animating .bg-gradient {
+  transform: scale(10);
 }
 
 .swup-progress-bar {
@@ -4785,8 +4791,8 @@ html.is-leaving .site-overlay {
   }
 }
 :root {
-  --color-accent-1: #3c32b3;
-  --color-accent-2: #231c7a;
+  --color-accent-1: #00fc93;
+  --color-accent-2: #224637;
   --color-light-1: #fff;
   --color-light-2: #F7FAF8;
   --color-white: #fff;
@@ -4799,8 +4805,8 @@ html.is-leaving .site-overlay {
 }
 
 [data-theme=dark] {
-  --color-accent-1: #5244fb;
-  --color-accent-2: #231c7a;
+  --color-accent-1: #00fc93;
+  --color-accent-2: #224637;
   --color-light-1: rgb(5, 5, 5);
   --color-light-2: rgb(17, 17, 17);
   --color-white: #fff;
@@ -4814,8 +4820,8 @@ html.is-leaving .site-overlay {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-accent-1: #5244fb;
-    --color-accent-2: #231c7a;
+    --color-accent-1: #00fc93;
+    --color-accent-2: #224637;
     --color-light-1: rgb(5, 5, 5);
     --color-light-2: rgb(17, 17, 17);
     --color-white: #fff;

@@ -9,14 +9,20 @@
 }
 
 html.is-animating .transition-fade {
-  transition: 500ms var(--transPower1);
-  transform: translateY(90px);
   opacity: 0;
 }
 
-html.is-leaving .transition-fade {
-  transform: translateY(-10vh);
-  opacity: 0;
+html.is-rendering .transition-fade {
+  transition-delay: 350ms;
+}
+
+.bg-gradient {
+  transition-property: transform;
+  transition-duration: 500ms;
+}
+
+html.is-animating .bg-gradient {
+  transform: scale(10);
 }
 
 .swup-progress-bar {
