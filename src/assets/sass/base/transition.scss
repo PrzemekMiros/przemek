@@ -11,7 +11,8 @@ html.is-animating .transition-fade {
   opacity: 0
 }
 html.is-rendering .transition-fade {
-  transition-delay: 350ms;
+  transition: 500ms var(--transPower1);
+  transition-delay: 400ms;
 }
 
 
