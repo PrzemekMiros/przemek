@@ -234,8 +234,8 @@ pre[class*=language-] {
 }
 
 .bg-gradient {
-  height: 500px;
-  width: 500px;
+  height: 600px;
+  width: 600px;
   background-image: linear-gradient(90deg, #00ff62, #0bcff1, #0e24e2, #8934eb, #311de6, #0b91eb, #00f1c9, #00ff62);
   filter: blur(100px);
   -webkit-filter: blur(100px);

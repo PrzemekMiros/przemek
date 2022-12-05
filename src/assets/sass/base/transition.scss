@@ -8,11 +8,12 @@
   transform: translateY(0)
 }
 html.is-animating .transition-fade {
+  transform: translateY(-50px);
   opacity: 0
 }
 html.is-rendering .transition-fade {
   transition: 500ms var(--transPower1);
-  transition-delay: 400ms;
+  transition-delay: 300ms
 }
 
 
