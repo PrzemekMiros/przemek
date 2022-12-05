@@ -21,3 +21,20 @@ module.exports = function(eleventyConfig) {
   }
 };
 ```
+
+Teraz stwórzmy katalog o nazwie "src" w głównym katalogu projektu, będziemy w nim przechowywać pliki źródłowe. Stwórzmy pierwszy plik - index.html
+
+```html
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleventy</title>
+</head>
+<body>
+    
+</body>
+</html>
+```
