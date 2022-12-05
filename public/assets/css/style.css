@@ -229,7 +229,7 @@ pre[class*=language-] {
 
 .bg-gradient-wrap {
   opacity: 0;
-  animation: fadeIn 5s 2s forwards;
+  animation: fadeIn 5s 1s forwards;
   overflow: hidden;
 }
 
