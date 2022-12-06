@@ -4,7 +4,7 @@
 }
 
 .transition-fade {
-  transition: 500ms var(--transPower1);
+  transition: 800ms var(--transPower1);
   transform: translateY(0);
 }
 
@@ -14,17 +14,20 @@ html.is-animating .transition-fade {
 }
 
 html.is-rendering .transition-fade {
-  transition: 500ms var(--transPower1);
+  transition: 800ms var(--transPower1);
   transition-delay: 300ms;
 }
 
-.bg-gradient {
+.bg-gradient-wrap {
   transition-property: transform;
-  transition-duration: 500ms;
+  transition-duration: 800ms;
 }
 
-html.is-animating .bg-gradient {
-  transform: scale(10);
+html.is-animating .bg-gradient-wrap {
+  border-radius: 0;
+  transition-duration: 800ms;
+  transition-property: transform;
+  transform: scale(5);
 }
 
 .swup-progress-bar {

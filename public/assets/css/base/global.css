@@ -46,9 +46,9 @@ li {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.95;
+  opacity: 0.9;
   pointer-events: none;
-  z-index: 1;
+  z-index: 9;
 }
 
 .formBrief {
@@ -228,22 +228,27 @@ pre[class*=language-] {
 }
 
 .bg-gradient-wrap {
-  opacity: 0;
+  position: absolute;
+  aspect-ratio: 1/1;
+  height: 50vh;
+  width: auto;
+  filter: blur(100px);
+  -webkit-filter: blur(100px);
+  transform: translateY(-50%) translateX(-50%);
   animation: fadeIn 5s 1s forwards;
   overflow: hidden;
+  opacity: 0;
 }
 
 .bg-gradient {
-  height: 600px;
-  width: 600px;
+  height: 100%;
+  width: 100%;
   background-image: linear-gradient(90deg, #00ff62, #0bcff1, #0e24e2, #8934eb, #311de6, #0b91eb, #00f1c9, #00ff62);
-  filter: blur(100px);
-  -webkit-filter: blur(100px);
   border-radius: 100%;
   background-size: 1000% 100%;
+  /*--
   animation: gradient 10s infinite ease-out;
-  transform: translateY(-50%) translateX(-50%);
-  position: absolute;
+  --*/
   opacity: 1;
   z-index: 0;
 }
