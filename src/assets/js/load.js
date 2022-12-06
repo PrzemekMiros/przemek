@@ -5,37 +5,6 @@
 (function e(t,r){if(typeof exports==="object"&&typeof module==="object")module.exports=r();else if(typeof define==="function"&&define.amd)define([],r);else if(typeof exports==="object")exports["SwupScriptsPlugin"]=r();else t["SwupScriptsPlugin"]=r()})(window,function(){return function(e){var t={};function r(n){if(t[n]){return t[n].exports}var o=t[n]={i:n,l:false,exports:{}};e[n].call(o.exports,o,o.exports,r);o.l=true;return o.exports}r.m=e;r.c=t;r.d=function(e,t,n){if(!r.o(e,t)){Object.defineProperty(e,t,{enumerable:true,get:n})}};r.r=function(e){if(typeof Symbol!=="undefined"&&Symbol.toStringTag){Object.defineProperty(e,Symbol.toStringTag,{value:"Module"})}Object.defineProperty(e,"__esModule",{value:true})};r.t=function(e,t){if(t&1)e=r(e);if(t&8)return e;if(t&4&&typeof e==="object"&&e&&e.__esModule)return e;var n=Object.create(null);r.r(n);Object.defineProperty(n,"default",{enumerable:true,value:e});if(t&2&&typeof e!="string")for(var o in e)r.d(n,o,function(t){return e[t]}.bind(null,o));return n};r.n=function(e){var t=e&&e.__esModule?function t(){return e["default"]}:function t(){return e};r.d(t,"a",t);return t};r.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)};r.p="";return r(r.s=0)}([function(e,t,r){"use strict";var n=r(1);var o=u(n);function u(e){return e&&e.__esModule?e:{default:e}}e.exports=o.default},function(e,t,r){"use strict";Object.defineProperty(t,"__esModule",{value:true});var n=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var r=arguments[t];for(var n in r){if(Object.prototype.hasOwnProperty.call(r,n)){e[n]=r[n]}}}return e};var o=function(){function e(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||false;n.configurable=true;if("value"in n)n.writable=true;Object.defineProperty(e,n.key,n)}}return function(t,r,n){if(r)e(t.prototype,r);if(n)e(t,n);return t}}();var u=r(2);var i=a(u);function a(e){return e&&e.__esModule?e:{default:e}}function f(e,t){if(!(e instanceof t)){throw new TypeError("Cannot call a class as a function")}}function c(e,t){if(!e){throw new ReferenceError("this hasn't been initialised - super() hasn't been called")}return t&&(typeof t==="object"||typeof t==="function")?t:e}function l(e,t){if(typeof t!=="function"&&t!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof t)}e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:false,writable:true,configurable:true}});if(t)Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t}var s=function e(t){return Array.prototype.slice.call(t)};var p=function(e){l(t,e);function t(e){f(this,t);var r=c(this,(t.__proto__||Object.getPrototypeOf(t)).call(this));r.name="ScriptsPlugin";r.runScripts=function(){var e=r.options.head&&r.options.body?document:r.options.head?document.head:document.body;var t=r.options.optin?"script[data-swup-reload-script]":"script:not([data-swup-ignore-script])";var n=s(e.querySelectorAll(t));n.forEach(function(e){return r.runScript(e)});r.swup.log("Executed "+n.length+" scripts.")};r.runScript=function(e){var t=document.createElement("script");var r=true;var n=false;var o=undefined;try{for(var u=s(e.attributes)[Symbol.iterator](),i;!(r=(i=u.next()).done);r=true){var a=i.value;var f=a.name,c=a.value;t.setAttribute(f,c)}}catch(e){n=true;o=e}finally{try{if(!r&&u.return){u.return()}}finally{if(n){throw o}}}t.textContent=e.textContent;t.setAttribute("async","false");e.replaceWith(t);return t};var o={head:true,body:true,optin:false};r.options=n({},o,e);return r}o(t,[{key:"mount",value:function e(){this.swup.on("contentReplaced",this.runScripts)}},{key:"unmount",value:function e(){this.swup.off("contentReplaced",this.runScripts)}}]);return t}(i.default);t.default=p},function(e,t,r){"use strict";Object.defineProperty(t,"__esModule",{value:true});var n=function(){function e(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||false;n.configurable=true;if("value"in n)n.writable=true;Object.defineProperty(e,n.key,n)}}return function(t,r,n){if(r)e(t.prototype,r);if(n)e(t,n);return t}}();function o(e,t){if(!(e instanceof t)){throw new TypeError("Cannot call a class as a function")}}var u=function(){function e(){o(this,e);this.isSwupPlugin=true}n(e,[{key:"mount",value:function e(){}},{key:"unmount",value:function e(){}},{key:"_beforeMount",value:function e(){}},{key:"_afterUnmount",value:function e(){}}]);return e}();t.default=u}])});
 
 
-function accordionWrap() {
-  let t = document.getElementsByClassName("accordion");
-  for (let e = 0; e < t.length; e++) t[e].addEventListener("click", function () {
-    let e = this.nextElementSibling;
-    if (e.style.maxHeight) e.style.maxHeight = null, this.classList.remove("open");
-    else {
-      for (let a = 0; a < t.length; a++) t[a].classList.remove("open"), t[a].nextElementSibling.style.maxHeight = null;
-      e.style.maxHeight = e.scrollHeight + "px", this.classList.toggle("open");
-    }
-  })
-}
-
-accordionWrap();  
-
-
-function greetingsText () {
-  const greeting = document.getElementById("greeting");
-  const hour = new Date().getHours();
-  const welcomeTypes = ["Dzień dobry", "Dobry wieczór"];
-  let welcomeText = "";
-  
-  if ((hour < 18) && (hour > 4)) welcomeText = welcomeTypes[0];
-  else welcomeText = welcomeTypes[1];
-  
-  greeting.innerHTML = welcomeText;
-  }
-  
-greetingsText();
-
-
-
 class Grain {
   constructor(t) {
     this.patternSize = 150, this.patternScaleX = 1, this.patternScaleY = 1, this.patternRefreshInterval = 3, this.patternAlpha = 15, this.canvas = t, this.ctx = this.canvas.getContext("2d"), this.ctx.scale(this.patternScaleX, this.patternScaleY), this.patternCanvas = document.createElement("canvas"), this.patternCanvas.width = this.patternSize, this.patternCanvas.height = this.patternSize, this.patternCtx = this.patternCanvas.getContext("2d"), this.patternData = this.patternCtx.createImageData(this.patternSize, this.patternSize), this.patternPixelDataLength = this.patternSize * this.patternSize * 4, this.resize = this.resize.bind(this), this.loop = this.loop.bind(this), this.frame = 0, window.addEventListener("resize", this.resize), this.resize(), window.requestAnimationFrame(this.loop)
@@ -77,6 +46,67 @@ const el = document.querySelector(".grain"),
   grain = new Grain(el);
 
 
+if (window.matchMedia("(min-width: 991px)").matches) {
+  const cursor = document.querySelector('.bg-gradient-wrap');
+  
+  let mouseX = 0;
+  let mouseY = 0;
+  
+  let cursorX = 0;
+  let cursorY = 0;
+  
+  let speed = 0.15;
+  
+  function animate() {
+      let distX = mouseX - cursorX;
+      let distY = mouseY - cursorY;
+  
+      cursorX = cursorX + (distX * speed);
+      cursorY = cursorY + (distY * speed);
+  
+      cursor.style.left = cursorX + 'px';
+      cursor.style.top = cursorY + 'px';
+  
+      requestAnimationFrame(animate);
+  }
+  
+  
+  animate();
+  
+  document.addEventListener('mousemove', (event) => {
+      mouseX = event.pageX;
+      mouseY = event.pageY;
+  });
+  };
+
+function accordionWrap() {
+  let t = document.getElementsByClassName("accordion");
+  for (let e = 0; e < t.length; e++) t[e].addEventListener("click", function () {
+    let e = this.nextElementSibling;
+    if (e.style.maxHeight) e.style.maxHeight = null, this.classList.remove("open");
+    else {
+      for (let a = 0; a < t.length; a++) t[a].classList.remove("open"), t[a].nextElementSibling.style.maxHeight = null;
+      e.style.maxHeight = e.scrollHeight + "px", this.classList.toggle("open");
+    }
+  })
+}
+
+accordionWrap();  
+
+
+function greetingsText () {
+  const greeting = document.getElementById("greeting");
+  const hour = new Date().getHours();
+  const welcomeTypes = ["Dzień dobry", "Dobry wieczór"];
+  let welcomeText = "";
+  
+  if ((hour < 18) && (hour > 4)) welcomeText = welcomeTypes[0];
+  else welcomeText = welcomeTypes[1];
+  
+  greeting.innerHTML = welcomeText;
+  }
+  
+greetingsText();
 
   
   function portfolioSlider() {
@@ -139,36 +169,3 @@ function loadingScripts() {
   }
 }
 
-
-if (window.matchMedia("(min-width: 991px)").matches) {
-  const cursor = document.querySelector('.bg-gradient-wrap');
-  
-  let mouseX = 0;
-  let mouseY = 0;
-  
-  let cursorX = 0;
-  let cursorY = 0;
-  
-  let speed = 0.15;
-  
-  function animate() {
-      let distX = mouseX - cursorX;
-      let distY = mouseY - cursorY;
-  
-      cursorX = cursorX + (distX * speed);
-      cursorY = cursorY + (distY * speed);
-  
-      cursor.style.left = cursorX + 'px';
-      cursor.style.top = cursorY + 'px';
-  
-      requestAnimationFrame(animate);
-  }
-  
-  
-  animate();
-  
-  document.addEventListener('mousemove', (event) => {
-      mouseX = event.pageX;
-      mouseY = event.pageY;
-  });
-  }

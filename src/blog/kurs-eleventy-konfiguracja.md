@@ -34,7 +34,7 @@ Teraz stwórzmy katalog o nazwie "src" w głównym katalogu projektu, będziemy 
     <title>Eleventy</title>
 </head>
 <body>
-    
+    <h1>Eleventy konfiguracja i uruchomienie projektu</h1>
 </body>
 </html>
 ```

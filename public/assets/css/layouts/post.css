@@ -28,11 +28,11 @@
   letter-spacing: 1px;
 }
 
-.post-navigation {
-  border-bottom: 1px solid var(--color-border);
-}
-
 .post-navigation a {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   font-weight: 600;
 }
 

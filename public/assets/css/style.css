@@ -230,7 +230,7 @@ pre[class*=language-] {
 .bg-gradient-wrap {
   position: absolute;
   aspect-ratio: 1/1;
-  height: 50vh;
+  height: 65vh;
   width: auto;
   filter: blur(100px);
   -webkit-filter: blur(100px);
@@ -4805,8 +4805,10 @@ html.is-leaving .site-overlay {
   --color-accent-2: #224637;
   --color-light-1: #fff;
   --color-light-2: #F7FAF8;
+  --color-light-3: #f7faf881;
   --color-white: #fff;
   --color-dark-1: rgb(14, 14, 14);
+  --color-dark-2: rgba(14, 14, 14, 0.486);
   --color-black: rgb(14, 14, 14);
   --color-heading: #0c3340;
   --color-text: #4f646b;
@@ -4819,8 +4821,10 @@ html.is-leaving .site-overlay {
   --color-accent-2: #224637;
   --color-light-1: rgb(5, 5, 5);
   --color-light-2: rgb(17, 17, 17);
+  --color-light-3: rgba(17, 17, 17, 0.486);
   --color-white: #fff;
   --color-dark-1: #fff;
+  --color-dark-2: rgba(255, 255, 255, 0.479);
   --color-black: rgb(14, 14, 14);
   --color-heading: #fff;
   --color-text: #aaa;
@@ -4834,8 +4838,10 @@ html.is-leaving .site-overlay {
     --color-accent-2: #224637;
     --color-light-1: rgb(5, 5, 5);
     --color-light-2: rgb(17, 17, 17);
+    --color-light-3: rgba(17, 17, 17, 0.486);
     --color-white: #fff;
     --color-dark-1: #fff;
+    --color-dark-2: rgba(255, 255, 255, 0.479);
     --color-black: rgb(14, 14, 14);
     --color-heading: #fff;
     --color-text: #aaa;
@@ -4875,8 +4881,16 @@ html.is-leaving .site-overlay {
   background-color: var(--color-light-2);
 }
 
+.bg-light-3 {
+  background-color: var(--color-light-3);
+}
+
 .bg-dark-1 {
   background-color: var(--color-dark-1);
+}
+
+.bg-dark-2 {
+  background-color: var(--color-dark-2);
 }
 
 .bg-black {
@@ -5300,11 +5314,11 @@ small {
   letter-spacing: 1px;
 }
 
-.post-navigation {
-  border-bottom: 1px solid var(--color-border);
-}
-
 .post-navigation a {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   font-weight: 600;
 }
 
@@ -5868,7 +5882,7 @@ small {
   flex-direction: row;
   justify-content: space-between;
   position: relative;
-  padding: 2.5em 0;
+  padding: 2.8em 0;
   cursor: pointer;
   transition: all 0.3s ease;
 }

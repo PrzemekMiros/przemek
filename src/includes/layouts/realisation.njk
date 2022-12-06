@@ -3,7 +3,7 @@
 <section class="pt-xlarge pb-large" data-scroll-section>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-6">
+            <div class="col-md-8 col-lg-6">
                 <div class="breacrumbs">
                     <a href="/">
                         Główna
@@ -30,17 +30,17 @@
                     {% endfor %}
                 {% endif %}
             </div>
-            <div class="col-md-10 pb-small">
+            <div class="col-lg-10 pb-small">
                 <img src="{{ thumbnail }}" alt="{{ title }}" class="img-fluid"></div>
             </div>
-            <div class="row justify-content-center">
-            <div class="col-md-6">
+            <div class="row justify-content-center pb-medium">
+            <div class="col-md-8 col-lg-6">
                 {{ content | safe }}
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="post-navigation pt-xsmall pb-xsmall">
+            <div class="col-xl-9">
+                <div class="post-navigation pt-xsmall pb-medium px-md-5 bg-light-3">
                     {%- if collections.realizacje %}
                         {%- set nextPost = collections.realizacje | getNextCollectionItem(page) %}
                         {%- set previousPost = collections.realizacje | getPreviousCollectionItem(page) %}
@@ -70,13 +70,6 @@
                         {%- endif %}
                     {%- endif %}
                 </div>
-                <ul class="single-post-tag-list mt-5">
-                    {% for tag in tags %}
-                        <li class="single-post-tag-list-item">
-                            <a href="/realizacje/{{ tag | slugify }}">{{ tag }}</a>
-                        </li>
-                    {% endfor %}
-                </ul>
             </div>
         </div>
     </div>
