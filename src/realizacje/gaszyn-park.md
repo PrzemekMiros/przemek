@@ -7,9 +7,8 @@ thumbnail: /assets/img/mockups/gaszyn.jpg
 tags:
   - Strony internetowe
 ---
-
 ## Osiedle dla wymagających
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Strona internetowa dla developera. Indywidualny projekt graficzny i kodowanie.  
 
-<a href="https://gaszynpark.pl/" title="Zobacz online" target="_blank" class="button">Zobacz online</a>
+<a href="https://gaszynpark.pl/" title="Zobacz online" target="_blank" class="button" rel="nofollow">Zobacz online</a>
