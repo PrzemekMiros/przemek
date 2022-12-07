@@ -2,7 +2,7 @@
 title: C7Med
 description: Centrum Rehabilitacji
 date: 2020-11-20T00:18:00.000Z
-author: Przemek
+author: Przemek Miros
 thumbnail: /assets/img/mockups/c7med.jpg
 tags:
   - Strony internetowe
