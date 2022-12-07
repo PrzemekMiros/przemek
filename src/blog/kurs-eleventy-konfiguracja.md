@@ -39,3 +39,9 @@ Teraz stwórzmy katalog o nazwie "src" w głównym katalogu projektu, będziemy 
 </body>
 </html>
 ```
+
+Teraz możemy uruchomić podgląd strony komendą:
+
+```javascript
+npm start
+```
