@@ -4,11 +4,12 @@ description: Dystrybutor rur i konstrukcji stalowych
 date: 2021-02-19T18:48:34.950Z
 author: Przemek
 thumbnail: /assets/img/mockups/ecotech.jpg
-tags: ['Strony internetowe', 'Portale internetowe']
+tags:
+  - Strony internetowe
+  - Portale internetowe
 ---
-
 ## Dystrybutor rur stalowych
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Strona internetowa dla dystrybutora rur stalowych. Wykonana wedłu dostarczonego projektu graficznego. Oparta na systemie zarządzania treścią Wordpress. Katalog produktów z intuicyjna wyszukiwarką i filtrowaniem. Optymalizacja techniczna pod silniki wyszukiwarek. Stała opieka nad stroną, analityka i dodawanie treści. Szereg działań z wiązanych ze zwiększaniem widoczności strony w Google.
 
-<a href="https://ecotechgroup.pl/" title="Zobacz online" target="_blank" class="button">Zobacz online</a>
+<a href="https://ecotechgroup.pl/" title="Zobacz online" target="_blank" class="button" rel="nofollow">Zobacz online</a>
