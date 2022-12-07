@@ -2,7 +2,7 @@
 title: Twoje Konsultacje
 description: Platforma konsultingowa
 date: 2022-08-20T00:18:00.000Z
-author: Przemek
+author: Przemek Miros
 thumbnail: /assets/img/mockups/konsultacje.jpg
 tags:
   - Strony internetowe
