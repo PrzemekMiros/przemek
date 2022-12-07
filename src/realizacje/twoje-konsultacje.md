@@ -2,13 +2,13 @@
 title: Twoje Konsultacje
 description: Platforma konsultingowa
 date: 2022-08-20T00:18:00.000Z
-author: Przemek
+author: Przemek Miros
 thumbnail: /assets/img/mockups/konsultacje.jpg
-tags: ['Strony internetowe']
+tags:
+  - Strony internetowe
 ---
-
 ## Platforma konsultingowa
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Platforma konsultingowa. Strona wykonana według projektu dostarczonego przez klienta, następnia zakodowany dedykowany motyw pod Wordpressa. Rejestracja, komentowanie i sondy.
 
-<a href="https://twojekonsultacje.pl/" title="Zobacz online" target="_blank" class="button">Zobacz online</a>
+<a href="https://twojekonsultacje.pl/" title="Zobacz online" target="_blank" class="button" rel="nofollow">Zobacz online</a>
