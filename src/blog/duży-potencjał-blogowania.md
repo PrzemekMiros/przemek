@@ -6,15 +6,10 @@ description: Nowa era zachęca do tworzenia treści generowanych przez
 date: 2021-07-23T12:39:03.586Z
 author: Przemek Miros
 thumbnail: /assets/img/blog/blog.jpg
-<<<<<<< HEAD
-tags: ['marketing']
-color: green
-=======
 color: violet
 tags:
   - marketing
   - pozycjonowanie
->>>>>>> 54a7b56d158d1b927bcffd26764e2c7f2679207a
 ---
 Wraz z początkiem XXI wieku nadeszła era tzw. Web 2.0. Termin ten opisuje nowe wykorzystanie Internetu: druga generacja sieci World Wide Web koncentruje się na zdolności ludzi do współpracy i udostępniania informacji online. Web 2.0 jest głównie kojarzony ze stronami internetowymi, które zawierają silny element społecznościowy, obejmujący profile użytkowników i linki do znajomych.
 

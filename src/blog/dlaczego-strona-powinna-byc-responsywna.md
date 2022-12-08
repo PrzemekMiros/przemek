@@ -5,16 +5,9 @@ description: Według badań około 80% osób, które mają telefon komórkowy, u
   przynajmniej raz dziennie
 date: 2021-03-19
 author: Przemek
-<<<<<<< HEAD
 thumbnail: /assets/img/blog/blog-responsive.jpg
 tags: ['marketing', 'pozycjonowanie']
 color: red
-=======
-thumbnail: /assets/img/blog/responsive.jpg
-color: blue
-tags:
-  - pozycjonowanie
->>>>>>> 54a7b56d158d1b927bcffd26764e2c7f2679207a
 ---
 
 Niektóre firmy są nadal odporne na posiadanie witryny przyjaznej dla urządzeń mobilnych, ponieważ brakuje im zasobów lub nie widzą korzyści. Jeśli jesteś jednym z nich - dobrze, pomyśl jeszcze raz. W 2007 r. Istniało około 1 mln witryn mobilnych, a do 2022 r. Liczba ta ma osiągnąć 250 mln. Widać wyraźnie, że w nadchodzących latach liczba stron przyjaznych dla urządzeń mobilnych będzie rosła.

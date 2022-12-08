@@ -1,0 +1,100 @@
+.single-post h1,
+.single-post h2,
+.single-post h3 {
+  margin-top: 0.8em;
+  margin-bottom: 0.6em;
+}
+
+.breacrumbs {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--color-white);
+  opacity: 0.6;
+}
+
+.single-post-image-wrap {
+  position: relative;
+}
+
+.single-post-image-wrap::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.85;
+}
+
+.single-post-image-wrap.red::before {
+  background: rgb(150, 0, 0);
+}
+
+.single-post-image-wrap.green::before {
+  background: rgb(0, 223, 119);
+}
+
+.single-post-image-wrap.blue::before {
+  background: rgb(0, 51, 145);
+}
+
+.single-post-image-wrap.violet::before {
+  background: rgb(101, 0, 168);
+}
+
+.single-post-title-wrap {
+  padding: 3em 6em;
+  position: absolute;
+  width: 77%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.single-post-title-wrap::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: var(--color-black);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.single-post-title {
+  color: var(--color-white);
+}
+
+.single-post-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.single-post-tag-list-item {
+  margin-bottom: 10px;
+}
+
+.single-post-tag-list-item a {
+  display: inline-block;
+  padding: 1.2em 1.5em;
+  margin-right: 0.8em;
+  background-color: var(--color-light-2);
+  font-size: 90%;
+  letter-spacing: 1px;
+}
+
+.post-navigation a {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-weight: 600;
+}
+
+@media (min-width: 767px) {
+  .post-navigation .next {
+    text-align: end;
+  }
+}

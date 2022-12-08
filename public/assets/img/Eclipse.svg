@@ -1,0 +1,35 @@
+<svg width="1220" height="1185" viewBox="0 0 1220 1185" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_2519_385)">
+<circle cx="610" cy="610" r="410" fill="url(#paint0_linear_2519_385)"/>
+</g>
+<defs>
+<filter id="filter0_f_2519_385" x="0" y="0" width="1220" height="1220" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_2519_385"/>
+</filter>
+<linearGradient id="paint0_linear_2519_385" x1="610" y1="200" x2="610" y2="1020" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#7A5FFF">
+        <animate attributeName="stop-color" values="#a834eb;
+        #7a34eb;
+        #4f34eb;
+        #3446eb;
+        #346beb;
+        #3734eb;
+        #7734eb;
+        #a834eb" dur="54s" repeatCount="indefinite"></animate>
+    </stop>
+
+    <stop offset="100%" stop-color="#01FF89">
+        <animate attributeName="stop-color" values="#a834eb;
+        #7a34eb;
+        #4f34eb;
+        #3446eb;
+        #346beb;
+        #3734eb;
+        #7734eb;
+        #a834eb" dur="54s" repeatCount="indefinite"></animate>
+    </stop>
+</linearGradient>
+</defs>
+</svg>
