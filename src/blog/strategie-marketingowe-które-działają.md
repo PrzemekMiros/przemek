@@ -3,7 +3,7 @@ title: Strategie marketingowe które działają
 description: Marketing internetowy może przyciągnąć więcej osób do Twojej witryny, zwiększyć liczbę klientów dla Twojej firmy oraz ulepszyć markę Twojej firmy i produktów
 date: 2020-07-19T22:30:56.973Z
 author: Przemek
-thumbnail: /assets/img/marketing-strategy.jpg
+thumbnail: /assets/img/blog/blog-marketing-strategy.jpg
 tags: ['marketing', 'pozycjonowanie', 'design']
 ---
 

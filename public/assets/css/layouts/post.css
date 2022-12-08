@@ -10,6 +10,46 @@
   letter-spacing: 1px;
 }
 
+.single-post-image-wrap {
+  position: relative;
+}
+
+.single-post-image-wrap::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: var(--color-dark-1);
+  opacity: 0.5;
+}
+
+.single-post-title-wrap {
+  padding: 3em 6em;
+  position: absolute;
+  width: 66%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.single-post-title-wrap::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: var(--color-black);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.single-post-title {
+  color: var(--color-white);
+}
+
 .single-post-tag-list {
   display: flex;
   flex-wrap: wrap;

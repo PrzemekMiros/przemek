@@ -3,7 +3,7 @@ title: Media społecznościowe a SEO
 description: Wobec coraz większej ilości danych i sposobów łączenia się, specjaliści ds. PR i komunikacji mają nieodpartą pozycję do opanowania nowych zasad odkrywania, wykorzystywania i udostępniania informacji konsumentom
 date: 2022-11-19T22:33:50.159Z
 author: Przemek
-thumbnail: /assets/img/media-seo.jpg
+thumbnail: /assets/img/blog/blog-media-seo.jpg
 tags: ['marketing', 'pozycjonowanie', 'design']
 ---
 Fakty: Google obsługuje ponad 11 miliardów zapytań miesięcznie, a Facebook zbliża się do 700 milionów użytkowników. Na całym świecie jest ponad 5 miliardów abonentów telefonii komórkowej, a co dwa dni powstaje więcej informacji niż między początkiem cywilizacji a 2003 rokiem. Era komunikacji i cyfrowych relacji między markami, mediami i konsumentami zmieniła się szybciej i w sposób, w jaki niewiele osób mogło się zmienić.
