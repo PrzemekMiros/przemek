@@ -6,6 +6,7 @@ description: Według badań około 80% osób, które mają telefon komórkowy, u
 date: 2021-03-19
 author: Przemek
 thumbnail: /assets/img/blog/responsive.jpg
+color: blue
 tags:
   - pozycjonowanie
 ---
