@@ -6,6 +6,7 @@ author: Przemek Miros
 thumbnail: /assets/img/eleventy-kurs.jpg
 tags:
   - Eleventy - kurs
+color: violet
 ---
 Masz już dosyć Wordpressa? Mam dla Ciebie dobrą alternatywę - generator stron statycznych Eleventy. W tym mini kursie pokaże Ci jak zbudować ponadprzecięnie szybką witrynę w pełni zoptymalizowaną pod SEO, a do tego z CMS'em :)
 

@@ -21,8 +21,17 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: var(--color-dark-1);
-    opacity: .5
+    opacity: 0.85
+}
+
+.single-post-image-wrap.red::before {
+    background: rgb(150, 0, 0);
+}
+.single-post-image-wrap.green::before {
+    background: rgb(0, 223, 119);
+}
+.single-post-image-wrap.blue::before {
+    background: rgb(0, 51, 145);
 }
 
 .single-post-title-wrap {

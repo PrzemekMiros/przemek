@@ -5,6 +5,7 @@ date: 2022-02-09
 author: Przemek
 thumbnail: /assets/img/blog/blog-ugly-website.jpg
 tags: ['marketing', 'pozycjonowanie']
+color: violet
 ---
 
 ## Twój design jest przestarzały
