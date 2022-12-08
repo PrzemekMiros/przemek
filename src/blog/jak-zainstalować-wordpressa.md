@@ -12,19 +12,19 @@ W tym artykule opiszę jak ręcznie zainstalować Wordpressa. Będziesz potrzebo
 
 Mamy pliki Wp na serwerze i pustą bazę danych, możemy rozpocząć instalację. Żeby uruchomić kreatora instalacji poprostu uruchom stronę, powinien się pokazać taki ekran.
 
-![Wordpress - ręczna instalacja](/assets/img/instalacja-wybor.jpg "Wordpress - ręczna instalacja")
+![Wordpress - ręczna instalacja](/assets/img/wordpress-kursy-instalacacja-1.jpg "Wordpress - ręczna instalacja")
 
  Kliknij "Zaczynajmy" żeby przejść do kolejnego ekranu. Przygotuj nazwę bazy danych, hasło i adres serwera bazy. Dobrą praktyką jest zmiana prefiksu bazy danych z domyslnego na własny, co powinno zwiększyć bezpieczeństwo strony.
 
-![Wordpress - ręczna instalacja - dane](/assets/img/instalacja-wordpress-dane.jpg "Wordpress - ręczna instalacja - dane")
+![Wordpress - ręczna instalacja - dane](/assets/img/wordpress-kursy-instalacacja-2.jpg "Wordpress - ręczna instalacja - dane")
 
 Jeżeli wszystkie dane są poprawne, powinieneś zobaczyć taki ekran
 
-![Wordpress - ręczna instalacja - potwierdzenie](/assets/img/wp-instalacja.jpg "Wordpress - ręczna instalacja - potwierdzenie")
+![Wordpress - ręczna instalacja - potwierdzenie](/assets/img/wordpress-kursy-instalacacja-3.jpg "Wordpress - ręczna instalacja - potwierdzenie")
 
 Kliknij "Uruchom instalacje", przejdziesz do ostatniego kroku instalacji
 
-![](/assets/img/wp-instalacja-potwierdzenie.jpg)
+![](/assets/img/wordpress-kursy-instalacacja-4.jpg)
 
 Wypełnij wszystkie wymagane pola i kliknij "Zainstaluj WordPressa".  Dobrą praktyką jest zaznaczenie "Proś wyszukiwarki o nieindeksowanie tej witryny" żeby nie indeksować strony na etapie budowy.
 
