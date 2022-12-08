@@ -1,11 +1,14 @@
 ---
 title: Duży potencjał blogowania
-description: Nowa era zachęca do tworzenia treści generowanych przez użytkowników w postaci tekstów, filmów i zdjęć wraz z komentarzami, tagami i ocenami.
+description: Nowa era zachęca do tworzenia treści generowanych przez
+  użytkowników w postaci tekstów, filmów i zdjęć wraz z komentarzami, tagami i
+  ocenami.
 date: 2021-07-23T12:39:03.586Z
-author: Przemek
+author: Przemek Miros
 thumbnail: /assets/img/blog/blog.jpg
-tags: ['marketing']
 color: violet
+tags:
+  - marketing
 ---
 Wraz z początkiem XXI wieku nadeszła era tzw. Web 2.0. Termin ten opisuje nowe wykorzystanie Internetu: druga generacja sieci World Wide Web koncentruje się na zdolności ludzi do współpracy i udostępniania informacji online. Web 2.0 jest głównie kojarzony ze stronami internetowymi, które zawierają silny element społecznościowy, obejmujący profile użytkowników i linki do znajomych.
 
