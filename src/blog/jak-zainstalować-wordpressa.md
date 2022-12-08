@@ -4,7 +4,7 @@ title: Jak zainstalować Wordpressa?
 description: Jak zainstalować Wordpressa ręcznie?
 date: 2022-12-08T19:34:41.039Z
 author: Przemek Miros
-thumbnail: /assets/img/wordpress-tutoriale.jpg
+thumbnail: /assets/img/wordpress-kursy.jpg
 tags:
   - wordpress
 ---
