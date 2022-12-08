@@ -411,7 +411,7 @@ html.is-animating .bg-gradient-wrap {
   border-radius: 0;
   transition-duration: 800ms;
   transition-property: transform;
-  transform: scale(5);
+  transform: scale(6);
 }
 
 .swup-progress-bar {
@@ -5986,7 +5986,7 @@ small {
   flex-direction: row;
   justify-content: space-between;
   position: relative;
-  padding: 2.8em 0;
+  padding: 3.5em 0 2.8em;
   cursor: pointer;
   transition: all 0.3s ease;
 }

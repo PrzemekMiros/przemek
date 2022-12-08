@@ -5,7 +5,7 @@ date: 2022-11-19
 author: Przemek
 thumbnail: /assets/img/blog/blog-ux-seo.jpg
 tags: ['pozycjonowanie', 'design']
-color: violet
+color: red
 ---
 
 ## Poznaj fakty na temat SEO

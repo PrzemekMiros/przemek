@@ -27,7 +27,7 @@ html.is-animating .bg-gradient-wrap {
   border-radius: 0;
   transition-duration: 800ms;
   transition-property: transform;
-  transform: scale(5);
+  transform: scale(6);
 }
 
 .swup-progress-bar {

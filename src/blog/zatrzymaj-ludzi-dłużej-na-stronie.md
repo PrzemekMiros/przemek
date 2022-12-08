@@ -5,7 +5,7 @@ date: 2022-11-19T22:48:49.663Z
 author: Przemek
 thumbnail: /assets/img/blog/blog-site-long.jpg
 tags: ['marketing', 'pozycjonowanie', 'design']
-color: violet
+color: green
 ---
 Dowiedziałeś się, jakie problemy powodują, że klienci opuszczają witrynę Twojej firmy. Teraz skupiamy się na tym, jak utrzymać je dłużej w witrynie, aby zmaksymalizować prezentację i przekształcić ją w płacących i lojalnych klientów.
 
