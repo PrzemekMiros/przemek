@@ -6,7 +6,7 @@ publish_mode: editorial_workflow
 
 site_url: https://przemekmiros.pl/
 
-media_folder: "src/assets/img" # Media files will be stored in the repo under assets/images/uploads
+media_folder: "src/assets/img/" # Media files will be stored in the repo under assets/images/uploads
 public_folder: "/assets/img" # The src attribute for uploaded media will begin with /images/uploads
 
 
@@ -34,6 +34,7 @@ collections:
       - {label: "Data", name: "date", widget: "datetime"}
       - {label: "Autor", name: "author", widget: "string"}
       - {label: "Obraz", name: "thumbnail", widget: "image"}
+      - {label: "Kolor", name: "color", widget: "string"}
       - {label: "Tagi", name: "tags", widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
   # Our pages e.g. About

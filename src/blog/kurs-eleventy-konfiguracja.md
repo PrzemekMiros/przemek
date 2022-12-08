@@ -7,7 +7,7 @@ author: Przemek Miros
 thumbnail: /assets/img/eleventy-kurs.jpg
 tags:
   - Eleventy - kurs
-color: violet
+color: green
 ---
 Zacznij od utworzenia pliku konfiguracyjnego, nazwij go .eleventy.js. W pliku będzie konfiguracja generatora oraz pluginów, zaczniemy od podania ścieżek - do katalogu z plikami źródłowymi i katalogu na pliki wyjściowe.
 

@@ -1,8 +1,51 @@
+.archive-post-image-wrap {
+    position: relative
+}
 
-.post-thumb img {
+.archive-post-image-wrap::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.85
+}
+
+.archive-post-image-wrap.red::before {
+    background: rgb(150, 0, 0);
+}
+.archive-post-image-wrap.green::before {
+    background: rgb(0, 223, 119);
+}
+.archive-post-image-wrap.blue::before {
+    background: rgb(0, 51, 145);
+}
+.archive-post-image-wrap.violet::before {
+    background: rgb(101, 0, 168);
+}
+
+.archive-post-thumb img {
     aspect-ratio: 8/5;
     object-fit: cover;
     object-position: center
+}
+
+.archive-post-title-wrap {
+    padding: 2em 2em 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0
+}
+
+.archive-post-title {
+    color: var(--color-white)
+}
+
+.archive-post-date {
+    color: var(--color-white);
+    opacity: .6
 }
 
 .hover-thumb {

@@ -8,6 +8,8 @@
 .breacrumbs {
   font-size: 12px;
   letter-spacing: 1px;
+  color: var(--color-white);
+  opacity: 0.6;
 }
 
 .single-post-image-wrap {
@@ -36,10 +38,14 @@
   background: rgb(0, 51, 145);
 }
 
+.single-post-image-wrap.violet::before {
+  background: rgb(101, 0, 168);
+}
+
 .single-post-title-wrap {
   padding: 3em 6em;
   position: absolute;
-  width: 66%;
+  width: 77%;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
