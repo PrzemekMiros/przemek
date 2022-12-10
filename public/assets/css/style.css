@@ -5374,6 +5374,10 @@ small {
   background: rgb(101, 0, 168);
 }
 
+.single-post-image-wrap img {
+  min-height: 260px;
+}
+
 .single-post-title-wrap {
   padding: 0em 2em;
   position: absolute;
