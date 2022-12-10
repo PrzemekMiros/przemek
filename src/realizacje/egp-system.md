@@ -10,6 +10,6 @@ tags:
 ---
 ## Producent nanokoloidów
 
-Strona i sklep interentowy dla producenta nanokoloidów. Po ustaleniu celu jaki ma speniać witryna, przygotowałem projekt graficzny. Strona z systemem zarządzania treścią Wordpress, sklep na Woocommerce. Szybka, zapezpieczona i zoptymalizowana pod wyszukiwarki.
+Strona i sklep interentowy dla producenta nanokoloidów. Systemem zarządzania treścią Wordpress, sklep oparty na Woocommerce, integracja z Baselinker. Szybka, zapezpieczona i zoptymalizowana pod wyszukiwarki.
 
 <a href="https://egp-system.com/" title="Zobacz online" target="_blank" class="button" rel="nofollow">Zobacz online</a>
