@@ -4832,9 +4832,9 @@ html.is-leaving .site-overlay {
 [data-theme=dark] {
   --color-accent-1: #06d6a0;
   --color-accent-2: #224637;
-  --color-light-1: rgb(5, 5, 5);
-  --color-light-2: rgb(17, 17, 17);
-  --color-light-3: rgba(17, 17, 17, 0.486);
+  --color-light-1: rgb(27, 34, 41);
+  --color-light-2: rgb(33, 43, 52);
+  --color-light-3: rgba(33, 43, 52, 0.5);
   --color-white: #fff;
   --color-dark-1: #fff;
   --color-dark-2: rgba(255, 255, 255, 0.479);
@@ -4849,9 +4849,9 @@ html.is-leaving .site-overlay {
   :root {
     --color-accent-1: #06d6a0;
     --color-accent-2: #224637;
-    --color-light-1: rgb(5, 5, 5);
-    --color-light-2: rgb(17, 17, 17);
-    --color-light-3: rgba(17, 17, 17, 0.486);
+    --color-light-1: rgb(27, 34, 41);
+    --color-light-2: rgb(33, 43, 52);
+    --color-light-3: rgba(33, 43, 52, 0.5);
     --color-white: #fff;
     --color-dark-1: #fff;
     --color-dark-2: rgba(255, 255, 255, 0.479);
