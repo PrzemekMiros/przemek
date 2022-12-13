@@ -323,3 +323,7 @@ pre[class*=language-] {
 }
 
 --*/
+.card {
+  transform: perspective(1000px) rotateX(10deg) rotateY(-20deg) scale3d(1, 1, 1);
+  will-change: transform;
+}
