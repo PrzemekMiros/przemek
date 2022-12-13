@@ -18,7 +18,14 @@
   .hero-menu-nav-list-item {
     margin-right: .8em;
     font-weight: 700;
-    opacity: .5
+    opacity: .4
+  }
+
+  #greeting {
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: .5;
   }
   
   @media(min-width:767px) {
