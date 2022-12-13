@@ -21,3 +21,11 @@
     filter: grayscale(100%);
     transition: .8s cubic-bezier(0.215, 0.610, 0.355, 1)
 }
+
+[data-theme=dark] .client-logo-wrap img {
+    filter: grayscale(100%) invert(50%);
+}
+
+[data-theme=dark] .client-logo-wrap:hover img {
+    filter: grayscale(5%) invert(0)
+}

@@ -323,11 +323,12 @@ pre[class*=language-] {
 }
 
 --*/
-.card {
-  transform: perspective(1000px) rotateX(10deg) rotateY(-20deg) scale3d(1, 1, 1);
-  will-change: transform;
+@media (min-width: 767px) {
+  .card {
+    transform: perspective(1000px) rotateX(10deg) rotateY(-20deg) scale3d(1, 1, 1);
+    will-change: transform;
+  }
 }
-
 html.has-scroll-smooth {
   background: var(--color-heading);
   overflow: hidden;
@@ -5762,6 +5763,14 @@ small {
   height: 55px;
   filter: grayscale(100%);
   transition: 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+[data-theme=dark] .client-logo-wrap img {
+  filter: grayscale(100%) invert(50%);
+}
+
+[data-theme=dark] .client-logo-wrap:hover img {
+  filter: grayscale(5%) invert(0);
 }
 
 .service-list {

@@ -160,8 +160,10 @@ greetingsText();
 function tiltEffect() {
   VanillaTilt.init(document.querySelectorAll(".card"), {
     max: 5,
-    speed: 200,
+    speed: 500,
     glare: true,
+    easing: "cubic-bezier(.03,.98,.52,.99)",
+    scale: 1.05,
     "max-glare": 0.5,
     perspective: 1000
   });
