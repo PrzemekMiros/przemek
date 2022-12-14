@@ -41,6 +41,14 @@
   display: none;
 }
 
+@media (prefers-color-scheme: dark) {
+  .logo-light {
+    display: block !important;
+  }
+  .logo-dark {
+    display: none;
+  }
+}
 .page-kontakt .logo-light,
 .page-wycena .logo-light {
   display: block;

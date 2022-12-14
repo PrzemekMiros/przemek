@@ -29,7 +29,7 @@ html.is-animating .bg-gradient-wrap {
 
 --*/
 .swup-progress-bar {
-  height: 2px;
+  height: 3px;
   background-color: var(--color-light-2);
 }
 

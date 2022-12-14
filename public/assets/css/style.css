@@ -439,7 +439,7 @@ html.is-animating .bg-gradient-wrap {
 
 --*/
 .swup-progress-bar {
-  height: 2px;
+  height: 3px;
   background-color: var(--color-light-2);
 }
 
@@ -4812,6 +4812,14 @@ html.is-leaving .site-overlay {
   display: none;
 }
 
+@media (prefers-color-scheme: dark) {
+  .logo-light {
+    display: block !important;
+  }
+  .logo-dark {
+    display: none;
+  }
+}
 .page-kontakt .logo-light,
 .page-wycena .logo-light {
   display: block;
