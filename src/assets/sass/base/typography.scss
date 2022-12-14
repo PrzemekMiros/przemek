@@ -307,7 +307,9 @@ h2, .h2 {
     font-size: calc(var(--subheading-min-font-size) * 1px);
   }
 
-
+  .text-uppercase {
+    text-transform: capitalize
+}
 
 
   .big-text {

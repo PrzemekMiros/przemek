@@ -72,6 +72,17 @@
                 </div>
             </div>
         </div>
+        <div class="row justify-content-center">
+            <div class="col-xl-6">
+                <ul class="single-post-tag-list mt-5">
+                    {% for tag in tags %}
+                        <li class="single-post-tag-list-item">
+                            <a href="/realizacje/{{ tag | slugify }}">{{ tag }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
     </div>
 </section>
 {% include "partials/footer.njk" %}
