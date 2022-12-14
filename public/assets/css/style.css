@@ -5411,7 +5411,7 @@ small {
 .breacrumbs {
   font-size: 12px;
   letter-spacing: 1px;
-  color: var(--color-white);
+  color: var(--color-dark-2);
   opacity: 0.6;
 }
 
