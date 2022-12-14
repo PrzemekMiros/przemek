@@ -4,18 +4,15 @@
 }
 
 .transition-fade {
-  transition: 800ms var(--transPower1);
+  transition: 500ms var(--transPower1);
   transform: translateY(0)
 }
 html.is-animating .transition-fade {
   transform: translateY(-50px);
   opacity: 0
 }
-html.is-rendering .transition-fade {
-  transition: 800ms var(--transPower1);
-  transition-delay: 300ms
-}
 
+/*--
 
 .bg-gradient-wrap {
   transition-property: transform;
@@ -29,7 +26,7 @@ html.is-animating .bg-gradient-wrap {
   transform: scale(6)
 }
 
-
+--*/
 
 .swup-progress-bar {
   height: 2px;

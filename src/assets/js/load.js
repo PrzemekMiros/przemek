@@ -159,11 +159,10 @@ greetingsText();
  if (window.matchMedia("(min-width: 767px)").matches) {
 function tiltEffect() {
   VanillaTilt.init(document.querySelectorAll(".card"), {
-    max: 5,
+    max: 10,
     speed: 500,
     glare: true,
     easing: "cubic-bezier(.03,.98,.52,.99)",
-    scale: 1.05,
     "max-glare": 0.5,
     perspective: 1000
   });
