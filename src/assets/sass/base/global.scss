@@ -253,18 +253,10 @@ li {
   width: 100%;
   background-image: linear-gradient(
     90deg,
-    #a834eb,
-    #7a34eb,
-    #4f34eb,
-    #3446eb,
-    #346beb,
-    #3734eb,
-    #7734eb,
-    #a834eb,
+    #0dfd6d,
+    #34eb93,
   );
-
   border-radius: 100%;
-  background-size: 1000% 100%;
   animation: gradient 10s infinite ease-out;
   opacity: 1;
   z-index: 0
@@ -356,7 +348,8 @@ li {
 }
 
 .card {
-  aspect-ratio: 4/5
+  aspect-ratio: 4/5;
+  opacity: .2
 }
 
 .card-wrap .image-wrapper {
