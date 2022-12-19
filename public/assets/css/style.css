@@ -1152,10 +1152,6 @@ html.is-leaving .site-overlay {
   .gx-md-5 {
     --bs-gutter-x: 3rem;
   }
-  .g-md-6,
-  .gx-md-6 {
-    --bs-gutter-x: 4.5rem;
-  }
   .g-md-5,
   .gy-md-5 {
     --bs-gutter-y: 3rem;
@@ -5106,9 +5102,16 @@ small {
   text-align: center;
 }
 
+.text-start {
+  text-align: left;
+}
+
 @media (min-width: 767px) {
   .text-md-center {
     text-align: center;
+  }
+  .text-md-start {
+    text-align: left;
   }
 }
 .hero-main-1 {

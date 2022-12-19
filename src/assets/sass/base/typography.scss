@@ -350,8 +350,15 @@ h2, .h2 {
     text-align: center    
   }
 
+  .text-start {
+    text-align: left
+  }
+
   @media(min-width:767px) {
     .text-md-center {
       text-align: center    
+  }
+  .text-md-start {
+    text-align: left
   }
   }
