@@ -1,10 +1,4 @@
-<!--
-<script async src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script async src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js" integrity="sha512-m/n857VfrPYUcRvzCfqfrC9aMT06TQA2V0DcX/Ovovrhswa3038FfYmHlB0l/ZMukVyKWmiwZI4Pnnd7v3FwFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
--->
-
 <script src="/assets/js/load.js"></script>
-
 <script>
   scroll = new LocomotiveScroll({
     el: document.querySelector("[data-scroll-container]"),
@@ -20,9 +14,7 @@
       smooth: !1
     }
   });
-
 new ResizeObserver(() => scroll.update()).observe(document.querySelector("[data-scroll-container]"));
-
 const swup = new Swup({
   plugins: [
     new SwupProgressPlugin(), 
@@ -34,16 +26,13 @@ const swup = new Swup({
       }),
   ]
 });
-
 document.addEventListener("swup:animationInStart", () => {
   scroll.destroy(), scroll.init(), loadingScripts()
 }), 
-
 document.addEventListener("swup:animationInDone", () => {
   scroll.destroy(), scroll.init()
 }), console.clear();
 </script>
-
 <script>
    const setTheme = () => {
      const currentTheme = localStorage.getItem('theme');
@@ -55,7 +44,6 @@ document.addEventListener("swup:animationInDone", () => {
      document.documentElement.dataset.theme = currentTheme;
    }
    setTheme();
-
    const themeToggleBtn = document.querySelector('.js-toggle-theme');
    themeToggleBtn.addEventListener('click', () => {  
      const { theme } = document.documentElement.dataset;
@@ -67,21 +55,9 @@ document.addEventListener("swup:animationInDone", () => {
      themeToggleBtn.setAttribute('title', themeLabel);
    });
 </script>
-
 <script data-swup-reload-script type="module" async>
   import Lazyload from "https://cdn.skypack.dev/vanilla-lazyload";
   const lazyload = new Lazyload();
 </script>
-
-<!-- Google tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-223952704-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-223952704-1');
-</script>
-
 </body>
 </html>
