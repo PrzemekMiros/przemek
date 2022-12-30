@@ -5,8 +5,9 @@ description: Mini kurs z generatora stron statycznych
 date: 2022-12-05T22:37:34.733Z
 author: Przemek Miros
 thumbnail: /assets/img/eleventy-kurs.jpg
-tags: ['jamstack']
 color: green
+tags:
+  - jamstack
 ---
 Zacznij od utworzenia pliku konfiguracyjnego, nazwij go .eleventy.js. W pliku będzie konfiguracja generatora oraz pluginów, zaczniemy od podania ścieżek - do katalogu z plikami źródłowymi i katalogu na pliki wyjściowe.
 
@@ -40,7 +41,7 @@ Teraz stwórzmy katalog o nazwie "src" w głównym katalogu projektu, będziemy 
 </html>
 ```
 
-Teraz możemy uruchomić podgląd strony komendą:
+Teraz możemy uruchomić podgląd strony poleceniem:
 
 ```javascript
 npm start
